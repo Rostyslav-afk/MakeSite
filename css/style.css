@@ -140,20 +140,131 @@ a {
 
 /* Header */
 .header-title {
-    font-size: 25px;
-    font-family: "Oswald";
+    font-size: 24px;
     text-align: center;
-
+    padding: 20px;
+    color: #222;
+  
     @media screen and (min-width: 752px) {
-        font-size: 50px;
+      font-size: 36px;
     }
-
+  
     @media screen and (min-width: 1264px) {
-        font-size: 50px;
+      font-size: 48px;
     }
-}
+  }
+  
+  /* Form Section */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  .form-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    @media screen and (min-width: 752px) {
+      padding: 30px;
+    }
+  
+    @media screen and (min-width: 1264px) {
+      max-width: 600px;
+    }
+  }
+  
+  .form-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #444;
+  
+    @media screen and (min-width: 752px) {
+      font-size: 18px;
+    }
+  }
+  
+  .form-label input,
+  .form-textarea {
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s ease-in-out;
+  
+    @media screen and (min-width: 752px) {
+      font-size: 18px;
+    }
+  }
+  
+  .form-label input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #0077ff;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .footer-box {
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-link {
+    display: inline-block;
+    color: #0077ff;
+    font-weight: bold;
+  }
 
-/* Form */
-
-
-/* Footer */
+  .form-button {
+    padding: 12px 20px;
+    background-color: #0077ff;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+  }
+  
+  .form-button:hover {
+    background-color: #005fd1;
+    transform: translateY(-2px);
+  }
+  
+  @media screen and (min-width: 752px) {
+    .form-button {
+      font-size: 18px;
+      padding: 14px 24px;
+    }
+  }
+  
